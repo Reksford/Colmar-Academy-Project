@@ -1,3 +1,68 @@
+/* COLORS: light:D7E4F5 lightmid:A6C0E2 mid: 779AC7 darkmid:5077A8 dark:355D91 */
+/* Basic Element Styles */
 html {
   font-size: 16px;
+}
+
+h1, h2 {
+  font-weight: bolder;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+ul {
+  margin-left: auto;
+}
+
+ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+/* Basic Class Styles */
+.flex {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+
+}
+
+.left {
+
+}
+
+.right {
+
+}
+
+/* Hides mobile as default */
+.mobile-menu, .mobile-img {
+  display: none;
+}
+
+/* Header Styles */
+
+
+/* Information Styles */
+
+
+/* Thesis Styles */
+
+
+/* Footer Styles */
+footer {
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  border-top: 1px solid darkgray;
+}
+
+footer ul {
+  /* margin-left: auto; */
 }

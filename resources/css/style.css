@@ -59,6 +59,18 @@ ul li {
   /* border: 1px dotted green; */
 }
 
+@media only screen and (max-width: 786px) {
+  .container {
+    padding: 2rem 0;
+  }
+
+  .left,
+  .right {
+    max-width: 49.125rem;
+    width: 100%
+    padding: 0;
+  }
+}
 
 /* Hides mobile as default */
 .mobile-menu, .mobile-img {
@@ -123,6 +135,50 @@ nav {
   background-color: #355D91;
 }
 
+
+@media only screen and (max-width: 786px) {
+/* Nav Bar */
+  .title,
+  .desktop {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+
+  .mobile-menu li {
+    flex: 1 1 4rem;
+  }
+
+  .mobile-menu li img {
+    height: 4rem;
+  }
+
+/* Welcome Banner */
+  .banner.flex {
+    display: block;
+  }
+
+  .banner img {
+    margin-top: -2rem;
+  }
+
+  .banner .right.column {
+    width: 80%;
+    margin-left: 1rem;
+    align-items: center;
+  }
+
+  .btn {
+    margin: 0;
+  }
+}
+
 /* Information Styles */
 .info h1 {
   margin-top: 2rem;
@@ -155,12 +211,44 @@ font-size: 0.9rem;
 }
 
 .info .box-text h2,
-.info .box-text a {
-  line-height: 2;
+.info .box-text span {
+  padding: 1rem 0;
 }
 
 .info .box:last-child {
   background-color: #A6C0E2
+}
+
+@media only screen and (max-width: 786px) {
+  .info .left {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
+  }
+
+  .info .box {
+    max-width: 100%;
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .info .box:last-child {
+    background-color: #D7E4F5;
+  }
+
+  .box-text {
+    margin-left: 2rem;
+  }
+
+  .box img {
+    float: none;
+    flex-grow: 1;
+    width: 90%;
+    padding: 0;
+    margin: 0 1rem;
+  }
 }
 
 /* Courses Styles */
@@ -183,7 +271,6 @@ font-size: 0.9rem;
   text-align: left;
 }
 
-
 .class img {
   width: 100%;
   height: auto;
@@ -197,6 +284,14 @@ font-size: 0.9rem;
 .class h2,
 .class p {
   padding: 1rem 0 1rem 1rem;
+}
+
+@media only screen and (max-width: 786px) {
+  .courses {
+    border-top: 1px solid #A6C0E2;
+    background-color: #D7E4F5;
+  }
+
 }
 
 /* Thesis Styles */
@@ -218,7 +313,13 @@ video {
 }
 
 .thesis .box:first-child {
-    background-color: #A6C0E2;
+  background-color: #A6C0E2;
+}
+
+@media only screen and (max-width: 786px) {
+  .thesis .right {
+    display: none;
+  }
 }
 
 /* Footer Styles */
@@ -227,5 +328,3 @@ footer {
   border-top: 1px solid #355D91;
   background-color: #5077A8;
 }
-
-/* TEST ZONE */

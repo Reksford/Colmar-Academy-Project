@@ -9,9 +9,10 @@
   <body>
     <header>
       <nav class="flex">
-        <div>
+        <div class="title flex">
           <img src="./resources/images/ic-logo.svg" alt="Colmar Logo">
-          <span>Colmar Academy</span>
+          <span>Colmar</span>
+          <span>Academy</span>
         </div>
         <div class"menu">
           <ul>
@@ -28,18 +29,14 @@
         </div>
       </nav>
   <!-- Welcome Banner -->
-      <div class="container">
-        <div class="flex banner">
-          <div class="left">
-            <img src="./resources/images/banner.jpg" alt="Students studying around park table">
-          </div>
-          <div class="right">
-            <h1>Learn something new everyday</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-            <div class="btn">
-              <span>Start Here</span>
-            </div>
-          </div>
+      <div class="container banner flex">
+        <div class="left">
+          <img src="./resources/images/banner.jpg" alt="Students studying around park table">
+        </div>
+        <div class="right column">
+          <h1>Learn something new everyday</h1>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <span class="btn">Start Here</span>
         </div>
       </div>
     </header>
@@ -48,43 +45,52 @@
       <div class="flex info">
         <div class="left">
           <img src="./resources/images/information-main.jpg" alt="A man reading">
-          <h1>It doesn't hurt to keep practicing.</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <span>Emanuel, Sr Strategist at Hiring.com</span>
+          <div class="text-pad">
+            <h1>It doesn't hurt to keep practicing.</h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+            <br>
+            <span aria-label="speaker of quote">Emanuel, Sr Strategist at Hiring.com</span>
+          </div>
         </div>
         <div class="right column">
 
           <div class="box">
             <img src="./resources/images/information-orientation.jpg" alt="Students walking on path">
             <img class="mobile-img" src="./resources/images/information-orientation-mobile.jpg" alt="students walking on path">
-            <h2>Orientation date</h2>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a href="#">Read more</a>
+            <div class="box-text column">
+              <h2>Orientation date</h2>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
 
           <div class="box">
             <img src="./resources/images/information-campus.jpg" alt="Student Lounge">
             <img class="mobile-img" src="./resources/images/information-campus-mobile.jpg" alt="Student Lounge">
-            <h2>Our campus</h2>
-            <p>Find which campus is close by you</p>
-            <a href="#">Read more</a>
+            <div class="box-text column">
+              <h2>Our campus</h2>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
 
           <div class="box">
             <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
             <img class="mobile-img" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
-            <h2>Our guest lecture</h2>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#">Read more</a>
+            <div class="box-text column">
+              <h2>Our guest lecture</h2>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
   <!-- Classes Section -->
-    <div class="container">
+    <div class="container courses">
       <h1>Start learning</h1>
-      <div class="flex courses">
+      <div class="flex classes">
 
         <div class="class column">
           <img src="./resources/images/course-software.jpg" alt="">
@@ -135,29 +141,31 @@
       <h1>Thesis exhibit</h1>
       <div class="flex thesis">
         <div class="left">
-          <figure>
             <video muted
                    controls
                    src="./resources/videos/thesis.mp4">
               Sorry, this browser does not support embedded videos.
             </video>
-          </figure>
           <h2>Reimagine urban</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
         </div>
-        <div class="right">
+        <div class="right column">
 
           <div class="box">
             <img src="./resources/images/thesis-fisma.jpg" alt="Designing ideas for mobile">
-            <h2>Fisma: Design and Prototype</h2>
-            <p>Designer showcase of new prototype product</p>
+            <div class="box-text column">
+              <h2>Fisma: Design and Prototype</h2>
+              <p>Designer showcase of new prototype product</p>
+            </div>
           </div>
 
           <div class="box">
-            <img src=".resources/images/thesis-now-and-then.jpg" alt="New York">
-            <h2>Now and then</h2>
-            <p>Research study about New York</p>
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="New York">
+            <div class="box-text column">
+              <h2>Now and then</h2>
+              <p>Research study about New York</p>
+            </div>
           </div>
 
         </div>

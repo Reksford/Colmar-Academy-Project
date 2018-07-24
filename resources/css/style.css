@@ -1,8 +1,10 @@
-/* COLORS:Blue light: #D7E4F5 lightmid: #A6C0E2 mid: #779AC7 darkmid: #5077A8 dark: #355D91 */
+/* COLORS:Blue light: #D7E4F5 lightmid: #A6C0E2 mid: #779AC7 darkmid: #5077A8 dark: #355D91 darkest: #17181A Yellow light: #FFF7DC lightmid: #FFEFB5 mid: #FFE78F darkmid: #FFE06D */
 /* Basic Element Styles */
 html {
   font-size: 16px;
   line-height: 1.2;
+  color: #17181A;
+  font-family: "Lato", sans-serif;
 }
 
 h1 {
@@ -42,7 +44,7 @@ ul li {
 
 .container {
   max-width: 100%;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0 2rem 1.5rem;
   background-color: #D7E4F5;
 }
 
@@ -68,6 +70,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
+  background-color: #5077A8;
 }
 
 .title {
@@ -83,13 +86,13 @@ nav {
 }
 
 .title span {
+  font-family: "Oxygen Mono", monospace;
   font-size: 2rem;
   text-transform: uppercase;
-  color: ;
 }
 
 .title span:last-child {
-  color: ;
+  color: #FFF7DC;
 }
 
 .banner {
@@ -221,7 +224,8 @@ video {
 /* Footer Styles */
 footer {
   padding: 1rem 1.5rem 2rem 1.5rem;
-  border-top: 1px solid darkgray;
+  border-top: 1px solid #355D91;
+  background-color: #5077A8;
 }
 
 /* TEST ZONE */

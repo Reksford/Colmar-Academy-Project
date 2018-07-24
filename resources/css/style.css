@@ -131,7 +131,7 @@ nav {
   padding: 0.5rem 6rem;
   margin-right: 2rem;
   flex: 0 2;
-  color: #D7E4F5;
+  color: #FFF7DC;
   background-color: #355D91;
 }
 
@@ -207,7 +207,17 @@ font-size: 0.9rem;
 
 .box-text {
   margin-top: 2rem;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.info a:link {
+  text-decoration: underline;
+  color: #FFE06D;
+  text-shadow: 1px 0 #5077A8, 0 0 2px #355D91;
+}
+
+.info a:visited {
+  color: #5077A8;
 }
 
 .info .box-text h2,
@@ -289,12 +299,42 @@ font-size: 0.9rem;
 @media only screen and (max-width: 786px) {
   .courses {
     border-top: 1px solid #A6C0E2;
+    border-bottom: 1px solid #A6C0E2;
     background-color: #D7E4F5;
   }
 
+  .classes {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .class {
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    margin: 0 0 0.25rem 0;
+    padding: 0;
+    background-color: #779AC7;
+  }
+
+  .class h2 {
+    padding: 0.5rem;
+  }
+
+  .class img,
+  .class span,
+  .class p {
+    display: none;
+  }
 }
 
 /* Thesis Styles */
+.projects h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
 video {
   width: 100%;
 }
@@ -320,6 +360,15 @@ video {
   .thesis .right {
     display: none;
   }
+
+  .thesis h2,
+  .thesis p {
+    display: none;
+  }
+
+  video {
+    margin: 1rem 0;
+  }
 }
 
 /* Footer Styles */
@@ -327,4 +376,15 @@ footer {
   padding: 1rem 1.5rem 2rem 1.5rem;
   border-top: 1px solid #355D91;
   background-color: #5077A8;
+}
+
+@media only screen and (max-width: 786px) {
+  footer {
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  footer ul {
+    display: none;
+  }
 }

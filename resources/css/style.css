@@ -137,7 +137,7 @@ nav {
 
 
 @media only screen and (max-width: 786px) {
-/* Nav Bar */
+/* Mobile Nav Bar */
   .title,
   .desktop {
     display: none;
@@ -150,7 +150,7 @@ nav {
     flex-grow: 1;
     margin-left: 1rem;
   }
-
+  /* Had trouble getting images to size correctly so settled with this hack of 4rem as flex-basis for li and height of img*/
   .mobile-menu li {
     flex: 1 1 4rem;
   }
@@ -159,13 +159,14 @@ nav {
     height: 4rem;
   }
 
-/* Welcome Banner */
+/* Mobile Welcome Banner */
   .banner.flex {
     display: block;
   }
 
   .banner img {
     margin-top: -2rem;
+    margin-bottom: 2rem;
   }
 
   .banner .right.column {
